@@ -142,9 +142,9 @@ def attack_on_rsa(e, n):
     beta = [1, frac[1]]  # beta_0
     i = 0
 
-    # exista l a.i. e * d - 1 = l * PHI(n)
-    # [q1,q2,...,qk+1] = fractia continua asociata fractiei e/n => atunci exista un 1<=i<=k+1 a.i [q1,...,qi]=l/d
-    # avand e si n, putem determina l si d astfel:
+    # E l such as e * d - 1 = l * PHI(n)
+    # [q1,q2,...,qk+1] = continuous fraction e/n => E i, 1<=i<=k+1 such as [q1,...,qi]= l / d
+    # having e and n, we can determine l and d:
 
     while not found:  # while criteria(l,d)=1
         if i > 1:
